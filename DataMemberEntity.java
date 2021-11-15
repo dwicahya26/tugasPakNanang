@@ -3,11 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package goldgym;
 
 /**
  *
- * @author Lenovo
+ * @author LENOVO
  */
-public class NewClass {
+public abstract class DataMemberEntity {
+    protected String nama, noMember; //modifier, deklarrrasi var string
     
+    public DataMemberEntity(String nama, String noMember){ //konstruk class parameter string dengan atributnya untuk menyimpan nilai dan mengambil nilai
+        this.nama = nama; //atribut dari parameter konstruk
+        this.noMember = noMember;
+    }
+    
+    public abstract String getNoMember();
+
+    public void setNoMemberr(String noMember) {
+        this.noMember = noMember;
+    }
+    
+    public String getNama(){ //method get gunanya ngambil nilai 
+        return nama;
+    }
+    public void setNama(String nama){ 
+        this.nama = nama;
+    }
 }
